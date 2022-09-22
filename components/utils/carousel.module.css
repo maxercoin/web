@@ -1,0 +1,18 @@
+.carousel {
+  height: 80vh;
+  width: inherit;
+  overflow: hidden;
+}
+.dotStyles {
+  background: linear-gradient(to right, #1f306e, #553772);
+  fill: #fff;
+  color: #fff;
+  /* border:1px dotted #fff; */
+}
+.items {
+  overflow: hidden;
+}
+.img {
+  width: 100vw;
+  height: max-content;
+}
