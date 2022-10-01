@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "./carousel.module.css";
-import { Box, Image as ChakraImg, Text } from "@chakra-ui/react";
+import { AspectRatio, Box, Image as ChakraImg, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import items from "./items";
 // import banner1 from "./slider/banner1.jpg";
@@ -76,7 +76,7 @@ function Carouselcomponent() {
           <Box {...carouselBoxestextsBox}>
             <Text
               color="#fff"
-              fontSize="2em"
+              fontSize={["1.1em","1.2em", "1.5em", "2em"]}
               fontWeight="500"
               p="5"
               wordWrap={true}
@@ -91,7 +91,7 @@ function Carouselcomponent() {
               p="5"
               textAlign="center"
               color="#fff"
-              fontSize="1.2em"
+              fontSize={["0.8em","1em","1.2em"]}
               className="firstBanner"
             >
               {v.content}
