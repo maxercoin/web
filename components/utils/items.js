@@ -30,7 +30,7 @@ export default [
   {
     header: "Today’s investment will assure your tomorrow’s future? !!!",
     content:
-      "Is their a way we can do fake withdrawal so that people will believe and also in the history or about the site maybe will should put long date that our site is being exit because some people will be searching for the time the thing started or what do u think about that.",
+      "The inflation of technology brings both expenditious capacities to your individual.",
     img: banner3,
   },
   {
@@ -42,26 +42,8 @@ export default [
   {
     header: "Today’s investment will assure your tomorrow’s future? !!!",
     content:
-      "Is their a way we can do fake withdrawal so that people will believe and also in the history or about the site maybe will should put long date that our site is being exit because some people will be searching for the time the thing started or what do u think about that.",
+      "The inflation of technology brings both expenditious capacities to your individual.",
     img: banner5,
-  },
-  {
-    header: "The feature of financing technology is here.",
-    content:
-      "The inflation of technology brings both expeditious capacities to your individual.",
-    img: banner6,
-  },
-  {
-    header: "The feature of financing technology is here.",
-    content:
-      "The inflation of technology brings both expeditious capacities to your individual.",
-    img: banner7,
-  },
-  {
-    header: "Today’s investment will assure your tomorrow’s future? !!!",
-    content:
-      "Is their a way we can do fake withdrawal so that people will believe and also in the history or about the site maybe will should put long date that our site is being exit because some people will be searching for the time the thing started or what do u think about that.",
-    img: banner8,
   },
   {
     header: "Investment platform you can trust .",
@@ -76,27 +58,15 @@ export default [
     img: banner10,
   },
   {
-    header: "Today’s investment will assure your tomorrow’s future? !!!",
-    content:
-      "Is their a way we can do fake withdrawal so that people will believe and also in the history or about the site maybe will should put long date that our site is being exit because some people will be searching for the time the thing started or what do u think about that.",
-    img: banner11,
-  },
-  {
     header: "Investment platform you can trust .",
     content:
       "Take a true adventure in cryptocurrency investment several blessing of technology, and be emphatic to manage yours.",
     img: banner12,
   },
   {
-    header: "The feature of financing technology is here.",
-    content:
-      "The inflation of technology brings both expeditious capacities to your individual.",
-    img: banner13,
-  },
-  {
     header: "Today’s investment will assure your tomorrow’s future? !!!",
     content:
-      "Is their a way we can do fake withdrawal so that people will believe and also in the history or about the site maybe will should put long date that our site is being exit because some people will be searching for the time the thing started or what do u think about that.",
+      "The inflation of technology brings both expenditious capacities to your individual.",
     img: banner14,
   },
   {
