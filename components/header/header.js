@@ -52,11 +52,10 @@ function Headercomponent() {
           bg="linear-gradient(90deg, rgba(20,0,36,1) 0%, rgba(179,46,204,1) 100%)"
           bgClip="text"
           fontWeight="bold"
-        >
-          onClick=
-          {(e) => {
+          onClick={(e) => {
             goto("/");
           }}
+        >
           MAXERCOIN
         </Text>
       </Box>
