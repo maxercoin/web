@@ -64,7 +64,7 @@ export function appreciateEmail(toUser) {
   });
 
   const message = {
-    from: "Maxercoin",
+    from: "Maxercoin <admin@maxercoin.com>",
     to: toUser.email,
     subject: "maxercoin - Account Activated",
     html: ` 
