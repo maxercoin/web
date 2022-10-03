@@ -53,6 +53,10 @@ function Headercomponent() {
           bgClip="text"
           fontWeight="bold"
         >
+          onClick=
+          {(e) => {
+            goto("/");
+          }}
           MAXERCOIN
         </Text>
       </Box>
