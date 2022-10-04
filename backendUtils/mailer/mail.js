@@ -102,10 +102,8 @@ export function sendContactUs(username, Email, Message) {
     html: ` 
             <h2 style={{color:'blue',fontSize:'24px'}}>Message from ${username}<h2/><br />
             <p style={{color:'blue',fontSize:'16px'}}>Email: ${Email}</p>><br /> 
-            <p style={{color:'blue',fontSize:'16px'}}>Message: ${Message}</p>><br /> 
-            
-        
-        `,
+            <p style={{color:'blue',fontSize:'16px'}}>Message: ${Message}</p>><br />  
+        `
   };
   transporter.sendMail(message, (err, info) => {
     console.log({ err, info });
