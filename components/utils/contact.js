@@ -80,7 +80,7 @@ function Contact() {
         CONTACT US
       </Text>
       <Text textAlign="center" color="#fff">
-        Don't hesitate to contact us for any kind of information
+        Don{"'"}t hesitate to contact us for any kind of information
       </Text>
       <Text textAlign="center" color="#fff">
         Your feedback helps us to improve our system and provide you with the
