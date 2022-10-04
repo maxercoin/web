@@ -44,7 +44,7 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: #553772;
+  /* background-color: #553772; */
   padding: 2rem;
   border-radius: 50%;
   color: #c7417b !important;
