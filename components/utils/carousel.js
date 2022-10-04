@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./carousel.module.css";
 import { EffectCoverflow, Navigation, Pagination } from "swiper";
-import { Box, Image as ChakraImg, Text } from "@chakra-ui/react";
+import {
+  AspectRatio,
+  Box,
+  Image as ChakraImg,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import items from "./items";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,6 +24,7 @@ function Carouselcomponent() {
     display: "grid",
     placeItems: "center",
   };
+  const [isLargerThan500] = useMediaQuery("(min-width:500px)");
   const carouselBoxestextsBox = {
     position: "absolute",
     zIndex: "1",
@@ -55,16 +62,17 @@ function Carouselcomponent() {
               {...carouselBoxes}
               position="relative"
               overflow="hidden"
-              width="100%"
-              h="100%"
+              width="100vw"
+              h={isLargerThan500 ? "100vh" : "50vh"}
             >
-              <ChakraImg
+              <Image
                 className={styles.img}
-                as={Image}
                 alt="Banner1"
-                layout="intrinsic"
+                layout="fill"
+                objectFit="cover"
                 src={v.img}
               />
+
               <Box {...carouselBoxestextsBox}>
                 <Text
                   color="#fff"
