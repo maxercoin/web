@@ -80,3 +80,37 @@ export function appreciateEmail(toUser) {
   });
   return;
 }
+export function sendContactUs(username, Email, Message) {
+  const transporter = nodemailer.createTransport({
+    host: "smtppro.zoho.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: "maxercoin@gmail.com", // generated ethereal user
+      pass: process.env.MAIL_PASSWORD, // generated ethereal password
+    },
+    tls: {
+      // do not fail on invalid certs
+      rejectUnauthorized: false,
+    },
+  });
+
+  const message = {
+    from: username + " <admin@maxercoin.com>",
+    to: "maxercoin1@gmail.com",
+    subject: "Contact Us message from " + username,
+    html: ` 
+            <h2 style={{color:'blue',fontSize:'24px'}}>Message from ${username}<h2/><br />
+            <p style={{color:'blue',fontSize:'16px'}}>Email: ${Email}</p>><br /> 
+            <p style={{color:'blue',fontSize:'16px'}}>Message: ${Message}</p>><br /> 
+            
+        
+        `,
+  };
+  transporter.sendMail(message, (err, info) => {
+    console.log({ err, info });
+    if (err) return err;
+    if (info) return info;
+  });
+  return;
+}
