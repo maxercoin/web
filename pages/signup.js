@@ -52,12 +52,12 @@ function Signup() {
             setError('')
           }else{
             console.log(singupuser)
-            setError(singupuser.response.data)
+            setError("An error occured");
           }
           setIsLoading(false)
         }catch(e){
           setIsLoading(false)
-          setError(e.response.data)
+          setError("An error occured")
             
         }
         }
