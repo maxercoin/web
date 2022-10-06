@@ -40,6 +40,7 @@
                 cloud_name: process.env.CLOUDINARY_NAME || "mexercoin_Storage",
                 api_key: process.env.CLOUDINARY_API_KEY,
                 api_secret: process.env.CLOUDINARY_API_SECRET,
+                secure: true
             });
             const {url:frontUrl} = await cloudinary.uploader.upload(frontSide, {
                 upload_preset: 'mexercoin_Storage',
