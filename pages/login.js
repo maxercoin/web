@@ -4,8 +4,8 @@ import Footercomponent from '../components/footer/footer'
 import Headercomponent from '../components/header/header'
 import colors from '../components/utils/colors'
 import {useRouter} from 'next/router'
-import Head from 'next/head'
-import axios from 'axios'
+import Head from 'next/head';
+import axios from 'axios';
 function Login() {
   const [isLargerthan834] = useMediaQuery('(min-width: 834px)')
   const [login,setLogin] = useState('')
