@@ -3,8 +3,8 @@ import nodemailer from "nodemailer";
 export async function sendConfirmationEmail(toUser, hash, msg) {
   const transporter = nodemailer.createTransport({
     host: "smtppro.zoho.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
@@ -48,8 +48,8 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
 export function appreciateEmail(toUser) {
   const transporter = nodemailer.createTransport({
     host: "smtppro.zoho.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
@@ -78,8 +78,8 @@ export function appreciateEmail(toUser) {
 export function sendContactUs(username, Email, Message) {
   const transporter = nodemailer.createTransport({
     host: "smtppro.zoho.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
