@@ -29,14 +29,13 @@ function Privacy() {
       <Text>
         This statement is for products and services. It applies to anyone who
         interacts with us, regardless of whether or not you're a Maxercoin
-        customer. Maxercoin is invest Limited, so when we say {"“"}we{"”"},{" "}
-        {"“"}us
-        {"”"} or {"“"}our{"”"}, we mean either Maxercoin Invest Limited{" "}
+        customer. Maxercoin is invest Limited, so when we say &#39;we&#39;,&#39;
+        &#39;us &#39; or &#39;our&#39;, we mean either Maxercoin Invest Limited{" "}
       </Text>
       <Text>
         When you use Maxercoin, you agree that we may collect, use, store, and
-        share your personal information as we{"’"}ve described in this
-        statement. You{"’"}ll be told about (and be asked to agree to) any
+        share your personal information as we&#39;ve described in this
+        statement. You&#39;ll be told about (and be asked to agree to) any
         additional privacy terms for a particular product or service when you
         sign up to it.{" "}
       </Text>
@@ -46,12 +45,12 @@ function Privacy() {
         information, and who we might share that information with.
       </Text>
       <Text fontSize="1.2em" fontWeight="bold" paddingTop="2px">
-        That{"’"}s what this statement covers.
+        That&#39;s what this statement covers.
       </Text>
       <Text>
         We may need to change this statement from time to time, but the latest
         version will always be available on our website. We will usually give at
-        least 14 days{"’"} notice to customers of any changes to this statement
+        least 14 days&#39; notice to customers of any changes to this statement
         but may not be able to for urgent changes we need to make to protect
         security or meet law changes. Your continued use of our products,
         services, websites and tools after the end of the notice period will be
