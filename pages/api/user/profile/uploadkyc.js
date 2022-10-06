@@ -34,7 +34,7 @@
                 res.status(400).send("User already exist, kindly check if you are verified already")
             }else{
                 const userowner = await user.findById(userid);
-                const ownername = userowner.firstName + " " + userowner.lastName
+                const ownername = userowner.firstName + " " + userowner.lastName;
             try{
                 cloudinary.config({
                 cloud_name: process.env.CLOUDINARY_NAME,
