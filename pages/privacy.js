@@ -28,7 +28,7 @@ function Privacy() {
       <Text>This privacy statement comes into effect on 1 Feb 2022.</Text>
       <Text>
         This statement is for products and services. It applies to anyone who
-        interacts with us, regardless of whether or not you're a Maxercoin
+        interacts with us, regardless of whether or not you&#39;were a Maxercoin
         customer. Maxercoin is invest Limited, so when we say &#39;we&#39;,&#39;
         &#39;us &#39; or &#39;our&#39;, we mean either Maxercoin Invest Limited{" "}
       </Text>
@@ -461,7 +461,7 @@ function Privacy() {
         >
           click here
         </Link>
-        , and for details of Google's Privacy Policy{" "}
+        , and for details of Google&#39;wes Privacy Policy{" "}
         <Link
           style={{ color: "blue" }}
           href="https://policies.google.com/privacy?gl=nz"
