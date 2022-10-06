@@ -24,8 +24,7 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
             <p>Thank you for registering your account </p>>
             <p>Kindly click the button bellow to complete your registration. </p>>
             <a target="_blank" href='${process.env.DOMAIN}/api/user/auth/signup/confirm?hash=${hash}'>CLICK HERE</a> 
-        
-        `,
+        `
   };
   if (msg?.type === "otp") {
     message = {
@@ -36,8 +35,6 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
             <h2 style={{color:'blue',fontSize:'20px'}}>Hello ${toUser.username}</h2>
             <p>Use this otp to activate your account </p>
             <h1 style={{fontWeight:'900', fontSize:'2em'}}>${msg.message}</h1>
-            
-        
         `,
     };
   }
@@ -70,8 +67,6 @@ export function appreciateEmail(toUser) {
     html: ` 
             <h2 style={{color:'blue',fontSize:'24px'}}>Congratulations ${toUser.username}<h2/><br />
             <p style={{color:'blue',fontSize:'16px'}}>Thank you for registering your account, your account has been succesfully activated </p>><br /> 
-            
-        
         `,
   };
   transporter.sendMail(message, (err, info) => {
