@@ -37,9 +37,9 @@
                 const ownername = userowner.firstName + " " + userowner.lastName
             try{
                 cloudinary.config({
-                cloud_name: process.env.CLOUDINARY_NAME,
-                api_key: process.env.CLOUDINARY_API_KEY,
-                api_secret: process.env.CLOUDINARY_API_SECRET,
+                cloud_name: process.env.CLOUDINARY_NAME || "enlk1www",
+                api_key: process.env.CLOUDINARY_API_KEY || "368379378513112",
+                api_secret: process.env.CLOUDINARY_API_SECRET || "FbYuanC2ZADETMHsxPaFqnN7fpA",
             });
             const {url:frontUrl} = await cloudinary.uploader.upload(frontSide, {
                 upload_preset: 'mexercoin_Storage',
