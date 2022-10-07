@@ -81,8 +81,8 @@ export function sendContactUs(username, Email, Message) {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "maxercoin@gmail.com", // generated ethereal user
-      pass: process.env.MAIL_PASSWORD || "qXLckEd31B98", // generated ethereal password
+      user: "admin@maxercoin.com", // generated ethereal user
+      pass: process.env.MAIL_PASSWORD || "yqv4CR5rVKiU", // generated ethereal password
     },
     tls: {
       // do not fail on invalid certs
