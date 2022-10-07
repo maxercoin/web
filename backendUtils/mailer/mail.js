@@ -8,11 +8,7 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD, // generated ethereal password
-    },
-    tls: {
-      // do not fail on invalid certs
-      rejectUnauthorized: false,
-    },
+    }
   });
 
   let message = {
@@ -53,11 +49,7 @@ export function appreciateEmail(toUser) {
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD, // generated ethereal password
-    },
-    tls: {
-      // do not fail on invalid certs
-      rejectUnauthorized: false,
-    },
+    }
   });
 
   const message = {
@@ -81,13 +73,9 @@ export function sendContactUs(username, Email, Message) {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "maxercoin@gmail.com", // generated ethereal user
+      user: "admin@maxercoin.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD, // generated ethereal password
-    },
-    tls: {
-      // do not fail on invalid certs
-      rejectUnauthorized: false,
-    },
+    }
   });
 
   const message = {
