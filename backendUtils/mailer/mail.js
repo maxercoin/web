@@ -7,7 +7,7 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
-      pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
+      pass: process.env.MAIL_PASSWORD, // generated ethereal password
     },
     tls: {
       // do not fail on invalid certs
@@ -52,7 +52,7 @@ export function appreciateEmail(toUser) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
-      pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
+      pass: process.env.MAIL_PASSWORD, // generated ethereal password
     },
     tls: {
       // do not fail on invalid certs
@@ -82,7 +82,7 @@ export function sendContactUs(username, Email, Message) {
     secure: true, // true for 465, false for other ports
     auth: {
       user: "maxercoin@gmail.com", // generated ethereal user
-      pass: process.env.MAIL_PASSWORD || "GY-h/?A!mmr4r5y", // generated ethereal password
+      pass: process.env.MAIL_PASSWORD, // generated ethereal password
     },
     tls: {
       // do not fail on invalid certs
