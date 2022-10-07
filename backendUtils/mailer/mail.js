@@ -78,10 +78,10 @@ export function appreciateEmail(toUser) {
 export function sendContactUs(username, Email, Message) {
   const transporter = nodemailer.createTransport({
     host: "smtppro.zoho.com",
-    port: 587,
-    secure: false, // true for 465, false for other ports
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
-      user: "admin@maxercoin.com", // generated ethereal user
+      user: "maxercoin@gmail.com", // generated ethereal user
       pass: process.env.MAIL_PASSWORD || "qXLckEd31B98", // generated ethereal password
     },
     tls: {
