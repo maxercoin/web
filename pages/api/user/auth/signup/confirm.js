@@ -6,7 +6,10 @@
 import bcrypt from "bcrypt";
 import user from "../../../../../backendUtils/model/model";
 import connectDB from "../../../../../backendUtils/db/connetMongo";
-import { sendConfirmationEmail } from "../../../../../backendUtils/mailer/mail";
+import {
+  sendConfirmationEmail,
+  appreciateEmail,
+} from "../../../../../backendUtils/mailer/mail";
 export default async function handler(req, res) {
   try {
     await connectDB();
@@ -22,7 +25,14 @@ export default async function handler(req, res) {
         },
         (err, docs) => {
           if (err) res.status(400).send(err);
-          if (docs) res.redirect(307, "/login");
+          if (docs) {
+            const toUser = {
+              username: updateUser.userName,
+              email: updateUser.email,
+            };
+            appreciateEmail(toUser);
+            res.redirect(307, "/login");
+          }
         }
       );
       console.log(updateUser);
