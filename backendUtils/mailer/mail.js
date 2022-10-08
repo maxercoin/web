@@ -1,7 +1,7 @@
 import { result } from "lodash";
 import nodemailer from "nodemailer";
 
-export async function sendConfirmationEmail(toUser, hash, msg) {
+export async function sendConfirmationEmail(toUser, hash, msg, returnValue) {
   const transporter = nodemailer.createTransport({
     host: "smtppro.zoho.com",
     port: 587,
@@ -37,8 +37,8 @@ export async function sendConfirmationEmail(toUser, hash, msg) {
   }
 
   return transporter.sendMail(message, (err, info) => {
-    if (err) return console.log(err);
-    if (info) return console.log(info);
+    if (err) return returnValue(false);
+    if (info) return returnValue(true);
   });
 }
 export function appreciateEmail(toUser) {
