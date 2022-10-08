@@ -81,7 +81,7 @@ export default async function handler(req, res) {
             email,
           };
           const id = createUser._id;
-          return generateCookieResponse(
+          return await generateCookieResponse(
             200,
             res,
             id,
