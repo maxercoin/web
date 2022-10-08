@@ -14,10 +14,10 @@ export default async function handler(req, res) {
     }
     try {
       await sendContactUs(username, email, message);
-      res.status(200).send("Message sent!");
+      return res.status(200).send("Message sent!");
     } catch (e) {
       console.log(e);
-      res.status(400).send("An error occurred");
+     return res.status(400).send("An error occurred");
     }
   }
 }
