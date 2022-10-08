@@ -89,7 +89,7 @@ export default async function handler(req, res) {
             false,
             address,
             toUser,
-            "singup"
+            "signup"
           );
           // res.status(200).send(`Kindly procced to your email to activate your account.`)
         } catch (e) {
