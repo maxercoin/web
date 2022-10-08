@@ -75,4 +75,4 @@ export default [
       "The inflation of technology brings both expeditious capacities to your individual.",
     img: banner15,
   },
-];
+]
