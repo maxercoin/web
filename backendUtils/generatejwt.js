@@ -36,7 +36,7 @@ const generateCookieResponse = async (
         });
       }
     };
-    return sendConfirmationEmail(toUser, id, "", returnValue);
+    return await sendConfirmationEmail(toUser, id, "", returnValue);
   }
   return res.status(statusCode).json({
     success: true,
