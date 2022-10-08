@@ -81,7 +81,6 @@ export default async function handler(req, res) {
             email,
           };
           const id = createUser._id;
-          await sendConfirmationEmail(toUser, id);
           return generateCookieResponse(
             200,
             res,
@@ -89,7 +88,8 @@ export default async function handler(req, res) {
             "user",
             false,
             address,
-            toUser
+            toUser,
+            "singup"
           );
           // res.status(200).send(`Kindly procced to your email to activate your account.`)
         } catch (e) {
