@@ -30,8 +30,7 @@ export default async function handler(req, res) {
         res.status(403).send("Kindly fill all required fields.");
       } else {
         const userKycExist = await kyc.findOne({ ownerid: userid });
-        const isEmpty = Object.keys(userKycExist).length === 0;
-        if (!isEmpty) {
+        if (userKycExist) {
           res
             .status(400)
             .send(
