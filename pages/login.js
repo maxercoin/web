@@ -23,6 +23,7 @@ function Login() {
   const [error, setError] = useState("");
   const { push: goto } = useRouter();
   const loginUser = async () => {
+    sessionStorage.clear();
     setIsLoading(true);
     if (!password || !login) {
       setError("Password and Username or email fields cannot be empty.");
