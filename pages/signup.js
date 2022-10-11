@@ -32,6 +32,7 @@ function Signup() {
   const [redEmail, setRedEmail] = useState(false);
 
   const submitForm = async () => {
+    sessionStorage.clear();
     setError("");
     setIsLoading(true);
     if (
