@@ -21,7 +21,6 @@ export default async function handler(req, res) {
   await connectDB();
   if (req.method?.toLocaleLowerCase() === "post") {
     const { idtype, idNuber, frontSide, backSide } = req.body;
-    console.log({ idtype, idNuber, frontSide, backSide });
     const userid = VerifyJwtAuth(req.headers);
     if (!userid) {
       res.status(401).send("Not authorized");
@@ -30,6 +29,7 @@ export default async function handler(req, res) {
         res.status(403).send("Kindly fill all required fields.");
       } else {
         const userKycExist = await kyc.findOne({ ownerid: userid });
+        console.log({ userKycExist });
         if (userKycExist) {
           res
             .status(400)
@@ -66,7 +66,6 @@ export default async function handler(req, res) {
               backUrl,
               status: kycstatuses[1],
             });
-            console.log(addKyc);
             res.status(200).send("Kyc uploaded successfully");
           } catch (e) {
             res.status(400).send(e?.message || "An error occurred");
