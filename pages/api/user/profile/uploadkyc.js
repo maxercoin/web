@@ -30,17 +30,16 @@
             res.status(403).send("Kindly fill all required fields.")
          }else{
             const userKycExist = await kyc.findOne({ownerid:userid})
-            if(userKycExist){
+            if(userKycExist.hasOwnProperty('_id')){
                 res.status(400).send("User already exist, kindly check if you are verified already")
             }else{
                 const userowner = await user.findById(userid);
-                const ownername = userowner.firstName + " " + userowner.lastName;
+                const ownername = userowner.firstName + " " + userowner.lastName
             try{
                 cloudinary.config({
-                cloud_name: process.env.CLOUDINARY_NAME || "dt72ydcbw",
+                cloud_name: process.env.CLOUDINARY_NAME,
                 api_key: process.env.CLOUDINARY_API_KEY,
                 api_secret: process.env.CLOUDINARY_API_SECRET,
-                secure: true
             });
             const {url:frontUrl} = await cloudinary.uploader.upload(frontSide, {
                 upload_preset: 'mexercoin_Storage',
