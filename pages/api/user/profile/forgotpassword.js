@@ -64,8 +64,16 @@ export default async function handler(req, res) {
               { email: userexist.email },
               { $set: { otp: userotp } }
             );
-            const sendEmail = await sendConfirmationEmail(touser, " ", msg);
-            res.status(200).send("Otp send to your email address");
+            const returnValue = (success) => {
+              if (success) {
+                return res.status(200).send("Otp send to your email address");
+              } else {
+                return res
+                  .status(400)
+                  .send("An error occured, kindly request OTP again");
+              }
+            };
+            return await sendConfirmationEmail(touser, " ", msg, returnValue);
           } catch (e) {
             console.log(e);
             res
@@ -103,12 +111,10 @@ export default async function handler(req, res) {
               { _id: userexist._id },
               { $set: { password: newPasswordHash } }
             );
-            res
-              .status(200)
-              .json({
-                updateUserPassword,
-                messsage: "Password updated successfully.",
-              });
+            res.status(200).json({
+              updateUserPassword,
+              messsage: "Password updated successfully.",
+            });
           }
         } else {
           res
