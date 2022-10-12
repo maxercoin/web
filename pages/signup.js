@@ -91,7 +91,9 @@ function Signup() {
             setIsLoading(false);
           } catch (e) {
             setIsLoading(false);
-            setError("An error occured");
+           setError(
+              e?.message || e?.response?.message || "An unknown error occured"
+            );
           }
         }
       }
