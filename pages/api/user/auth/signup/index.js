@@ -41,7 +41,7 @@ export default async function handler(req, res) {
       const userExist = await user.findOne({ $or: [{ email }, { userName }] });
       console.log(userExist);
       if (userExist) {
-        res.status(400).json({ userExist: userExist });
+        res.status(400).send("Email or Username already used by another user");
       } else {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -93,7 +93,7 @@ export default async function handler(req, res) {
           );
           // res.status(200).send(`Kindly procced to your email to activate your account.`)
         } catch (e) {
-          res.status(400).send(e.message);
+          res.status(400).send("Email or Username Taken");
           console.log(e.message);
         }
         // res.status(200).json({ userName,email });
