@@ -92,7 +92,7 @@ function Signup() {
           } catch (e) {
             setIsLoading(false);
           setError(
-             "Email or username is already used, kindly sign up or register with another email"
+             "Email or username is already used, kindly login or signup with another email"
             );
           }
         }
