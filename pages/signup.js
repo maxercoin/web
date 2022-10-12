@@ -86,13 +86,13 @@ function Signup() {
               setError("");
             } else {
               console.log(singupuser);
-              setError("An error occured");
+              setError("Email or username is already used");
             }
             setIsLoading(false);
           } catch (e) {
             setIsLoading(false);
           setError(
-              e?.response?.messagee || e?.message || "An unknown error occured"
+             "Email or username is already used, kindly sign up or register with another email"
             );
           }
         }
