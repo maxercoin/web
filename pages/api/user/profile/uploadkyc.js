@@ -29,6 +29,7 @@ export default async function handler(req, res) {
         res.status(403).send("Kindly fill all required fields.");
       } else {
         const userKycExist = await kyc.findOne({ ownerid: userid });
+        console.log({ userid });
         console.log({ userKycExist });
         if (userKycExist) {
           res
