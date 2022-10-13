@@ -61,6 +61,7 @@ function Login() {
         setIsLoading((v) => false);
       } catch (e) {
         setIsLoading((v) => false);
+        setError("Password or Email incorrect.")
         console.log(e);
       }
     }
