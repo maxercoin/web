@@ -38,7 +38,7 @@ function VideoCarousel() {
     // zIndex:'1'
   };
   return (
-    <Box w="100vw" display="flex" justifyItems="center">
+    <Box w="100vw" display="flex" justifyItems="center" mt='5'>
       <Swiper
         modules={[EffectCoverflow, Navigation, Pagination]}
         spaceBetween={5}
@@ -55,31 +55,33 @@ function VideoCarousel() {
         }}
         className={style.swiper}
       >
-        {items.map((v, index) => (
-          <SwiperSlide className={style.slide} key={index + "carousel"}>
-            <AspectRatio ratio={1}>
-              <iframe
-                title=""
-                src="https://www.youtube.com/watch?v=mhE_vvwAiRc"
-                allowFullScreen
-              />
-            </AspectRatio>
-            <AspectRatio ratio={1}>
-              <iframe
-                title=""
-                src="https://www.youtube.com/watch?v=0B3sccDYwuI"
-                allowFullScreen
-              />
-            </AspectRatio>
-            <AspectRatio ratio={1}>
-              <iframe
-                title=""
-                src="https://www.youtube.com/watch?v=fjnovGRQrRE"
-                allowFullScreen
-              />
-            </AspectRatio>
-          </SwiperSlide>
-        ))}
+        <SwiperSlide className={style.slide}>
+          <iframe
+            title=""
+            src="https://video.wixstatic.com/video/836da5_7dc6b89321494d5f810e725adcd81fee/1080p/mp4/file.mp4"
+            allowFullScreen
+            width="100%"
+            height="400px"
+          />
+        </SwiperSlide>
+        <SwiperSlide className={style.slide}>
+          <iframe
+            title=""
+            src="https://video.wixstatic.com/video/836da5_4cc22bd0f5c34a47956823f6880c4c7f/1080p/mp4/file.mp4"
+            allowFullScreen
+            width="100%"
+            height="400px"
+          />
+        </SwiperSlide>
+        <SwiperSlide className={style.slide}>
+          <iframe
+            title=""
+            src="https://video.wixstatic.com/video/836da5_4108cd3f3ac343fda8cc3fcde98ff95a/1080p/mp4/file.mp4"
+            allowFullScreen
+            width="100%"
+            height="400px"
+          />
+        </SwiperSlide>
       </Swiper>
     </Box>
   );
