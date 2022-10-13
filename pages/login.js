@@ -61,7 +61,7 @@ function Login() {
         setIsLoading((v) => false);
       } catch (e) {
         setIsLoading((v) => false);
-        setError("Password or Email incorrect.")
+        setError("Email or password not correct!.");
         console.log(e);
       }
     }
@@ -129,6 +129,7 @@ function Login() {
             >
               Login{" "}
             </Button>
+            {error && <Text color="#ff0000">{error}</Text>}
             <Text
               _hover={{ cursor: "pointer", color: colors.deg2color }}
               onClick={(e) => goto("/forgotpassword")}
