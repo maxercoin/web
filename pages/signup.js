@@ -104,10 +104,10 @@ function Signup() {
   return (
     <>
       <Head>
-        <title>MexerCoin</title>
+        <title>MaxerCoin</title>
         <meta
           name="description"
-          content="Mexer coin cryptocurrency Investment Website Signup page"
+          content="Maxer coin cryptocurrency Investment Website Signup page"
         />
         <link rel="icon" href="/logo.png" />
       </Head>
