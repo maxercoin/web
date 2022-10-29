@@ -58,8 +58,8 @@ function Signup() {
 
   return (<>
   <Head>
-        <title>MexerCoin</title>
-        <meta name="description" content="Mexer coin cryptocurrency Investment Website Admin Signup page" />
+        <title>MaxerCoin</title>
+        <meta name="description" content="Maxer coin cryptocurrency Investment Website Admin Signup page" />
         <link rel="icon" href="/logo.png" />
       </Head>
     <Box display='flex' flexDirection='column' justifyContent='center' placeItems='center' gap='5'  bgGradient={`linear(to-r,${colors.primarycolor},${colors.secondarycolor})`} h='100vh' w='100vw'>
