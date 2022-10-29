@@ -11,10 +11,10 @@ export default function Home({ faq }) {
   return (
     <>
       <Head>
-        <title>MexerCoin</title>
+        <title>MaxerCoin</title>
         <meta
           name="description"
-          content="Mexer coin cryptocurrency Investment Website"
+          content="Maxer coin cryptocurrency Investment Website"
         />
         <link rel="icon" href="/logo.png" />
       </Head>
