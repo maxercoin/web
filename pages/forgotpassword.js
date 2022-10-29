@@ -66,8 +66,8 @@ function Forgotpassword() {
       }
     return (<> 
     <Head>
-          <title>MexerCoin</title>
-          <meta name="description" content="Mexer coin cryptocurrency Investment Website Forgot Password Page" />
+          <title>MaxerCoin</title>
+          <meta name="description" content="Maxer coin cryptocurrency Investment Website Forgot Password Page" />
           <link rel="icon" href="/logo.png" />
         </Head>   
       <Headercomponent />
