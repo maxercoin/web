@@ -69,10 +69,10 @@ function Login() {
   return (
     <>
       <Head>
-        <title>MexerCoin</title>
+        <title>MaxerCoin</title>
         <meta
           name="description"
-          content="Mexer coin cryptocurrency Investment Website Login Page"
+          content="Maxer coin cryptocurrency Investment Website Login Page"
         />
         <link rel="icon" href="/logo.png" />
       </Head>
