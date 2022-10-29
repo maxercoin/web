@@ -11,8 +11,8 @@ function Adminpage() {
   return (
     <>
     <Head>
-        <title >MexerCoin</title>
-        <meta name="description" content="Mexer coin cryptocurrency Investment Website Admin page"  />
+        <title >MaxerCoin</title>
+        <meta name="description" content="Maxer coin cryptocurrency Investment Website Admin page"  />
         <link rel="icon" href="/logo.png" />
       </Head>
     {/* <Headercomponent /> */}
